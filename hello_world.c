@@ -24,18 +24,10 @@ int main(void)
     for (int i = 0; i < 20; i++) {
         printf(" %d", data[i]);
     }
-<<<<<<< HEAD
-
-    printf("\n");
-    free(data);
-
-    int sum = add(5, 10);
-=======
     printf("\n");
     free(data);
 
     int sum = add(6 + 6);
->>>>>>> c53ec6c725fdcbc016dc1e9db0a64f263411d5f7
     printf("The sum of 5 and 10 is %d \n", sum);
     return 0;
 }
@@ -44,7 +36,3 @@ int add(int a, int b)
 {
     return a + b;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> c53ec6c725fdcbc016dc1e9db0a64f263411d5f7
