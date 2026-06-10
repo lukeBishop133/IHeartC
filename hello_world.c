@@ -24,11 +24,11 @@ int main(void)
     for (int i = 0; i < 20; i++) {
         printf(" %d", data[i]);
     }
-    
+
     printf("\n");
     free(data);
 
-    int sum = add(6 + 6);
+    int sum = add(5, 10);
     printf("The sum of 5 and 10 is %d \n", sum);
     return 0;
 }
