@@ -17,6 +17,7 @@ int main(void)
     sue.name[sizeof(sue.name) - 1] = '\0'; // Ensure null-termination
     sue.age = 30;
 
+    printf("Sue: %s, age %d\n", sue.name, sue.age);
     srand(time(NULL));
     int *data = malloc(20 * sizeof(int));
     if (data == NULL) {
