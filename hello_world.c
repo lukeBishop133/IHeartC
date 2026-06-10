@@ -1,12 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
+
+typedef struct{
+    char name[50];
+    int age;
+} Person;
 
 int add(int a, int b);
 
-
 int main(void)
 {
+    Person sue;
+    strncpy(sue.name, "Alice", sizeof(sue.name) - 1);
+    sue.name[sizeof(sue.name) - 1] = '\0'; // Ensure null-termination
+    sue.age = 30;
+
     srand(time(NULL));
     int *data = malloc(20 * sizeof(int));
     if (data == NULL) {
@@ -27,7 +37,7 @@ int main(void)
     printf("\n");
     free(data);
 
-    int sum = add(6 + 6);
+    int sum = add(6, 6);
     printf("The sum of 5 and 10 is %d \n", sum);
     return 0;
 }
