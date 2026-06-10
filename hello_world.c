@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int add(int a, int b);
+
+
 int main(void)
 {
     int *data = malloc(20 * sizeof(int));
@@ -20,7 +23,15 @@ int main(void)
         printf(" %d", data[i]);
     }
     printf("\n");
-
     free(data);
+
+    int sum = add(6 + 6);
+    printf("The sum of 5 and 10 is %d \n", sum);
     return 0;
 }
+
+int add(int a, int b)
+{
+    return a + b;
+}
+
